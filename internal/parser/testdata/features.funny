@@ -1,0 +1,26 @@
+positive(x: int) => x > 0
+
+advance(x: int, a: int[])
+  requires x >= 0
+  returns r: int
+  ensures r > x
+  uses t, b: int[]
+{
+  t = 0;
+  b = a;
+  a[t][0] = x;
+  while (t < 2) invariant forall(i: int | i >= 0) {
+    t = t + 1;
+  }
+  if (not x < 0 and true or false -> true)
+    r = x + t;
+  else
+    r = x + 1;
+  assert positive(r);
+  assume exists(j: int | j == r);
+}
+
+pair(a: int) returns x: int, y: int {
+  x = a;
+  y = a + 1;
+}

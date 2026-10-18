@@ -1,0 +1,8 @@
+broken() returns r: int {
+  r = ;
+  r = 2;
+  assert r == 2;
+}
+later() returns r: int {
+  r = 3;
+}

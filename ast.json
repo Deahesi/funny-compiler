@@ -1,0 +1,360 @@
+{
+  "kind": "Program",
+  "span": {
+    "start": {
+      "offset": 0,
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "offset": 99,
+      "line": 8,
+      "column": 1
+    }
+  },
+  "declarations": [
+    {
+      "kind": "Function",
+      "span": {
+        "start": {
+          "offset": 0,
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "offset": 98,
+          "line": 7,
+          "column": 2
+        }
+      },
+      "name": "increment",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "int",
+          "span": {
+            "start": {
+              "offset": 10,
+              "line": 1,
+              "column": 11
+            },
+            "end": {
+              "offset": 16,
+              "line": 1,
+              "column": 17
+            }
+          }
+        }
+      ],
+      "returns": [
+        {
+          "name": "r",
+          "type": "int",
+          "span": {
+            "start": {
+              "offset": 54,
+              "line": 3,
+              "column": 9
+            },
+            "end": {
+              "offset": 60,
+              "line": 3,
+              "column": 15
+            }
+          }
+        }
+      ],
+      "requires": {
+        "kind": "Binary",
+        "span": {
+          "start": {
+            "offset": 27,
+            "line": 2,
+            "column": 10
+          },
+          "end": {
+            "offset": 45,
+            "line": 2,
+            "column": 28
+          }
+        },
+        "operator": "and",
+        "left": {
+          "kind": "Binary",
+          "span": {
+            "start": {
+              "offset": 27,
+              "line": 2,
+              "column": 10
+            },
+            "end": {
+              "offset": 33,
+              "line": 2,
+              "column": 16
+            }
+          },
+          "operator": "\u003e=",
+          "left": {
+            "kind": "Identifier",
+            "span": {
+              "start": {
+                "offset": 27,
+                "line": 2,
+                "column": 10
+              },
+              "end": {
+                "offset": 28,
+                "line": 2,
+                "column": 11
+              }
+            },
+            "name": "x"
+          },
+          "right": {
+            "kind": "Integer",
+            "span": {
+              "start": {
+                "offset": 32,
+                "line": 2,
+                "column": 15
+              },
+              "end": {
+                "offset": 33,
+                "line": 2,
+                "column": 16
+              }
+            },
+            "value": "0"
+          }
+        },
+        "right": {
+          "kind": "Binary",
+          "span": {
+            "start": {
+              "offset": 38,
+              "line": 2,
+              "column": 21
+            },
+            "end": {
+              "offset": 45,
+              "line": 2,
+              "column": 28
+            }
+          },
+          "operator": "\u003c",
+          "left": {
+            "kind": "Identifier",
+            "span": {
+              "start": {
+                "offset": 38,
+                "line": 2,
+                "column": 21
+              },
+              "end": {
+                "offset": 39,
+                "line": 2,
+                "column": 22
+              }
+            },
+            "name": "x"
+          },
+          "right": {
+            "kind": "Integer",
+            "span": {
+              "start": {
+                "offset": 42,
+                "line": 2,
+                "column": 25
+              },
+              "end": {
+                "offset": 45,
+                "line": 2,
+                "column": 28
+              }
+            },
+            "value": "100"
+          }
+        }
+      },
+      "ensures": {
+        "kind": "Binary",
+        "span": {
+          "start": {
+            "offset": 69,
+            "line": 4,
+            "column": 9
+          },
+          "end": {
+            "offset": 79,
+            "line": 4,
+            "column": 19
+          }
+        },
+        "operator": "==",
+        "left": {
+          "kind": "Identifier",
+          "span": {
+            "start": {
+              "offset": 69,
+              "line": 4,
+              "column": 9
+            },
+            "end": {
+              "offset": 70,
+              "line": 4,
+              "column": 10
+            }
+          },
+          "name": "r"
+        },
+        "right": {
+          "kind": "Binary",
+          "span": {
+            "start": {
+              "offset": 74,
+              "line": 4,
+              "column": 14
+            },
+            "end": {
+              "offset": 79,
+              "line": 4,
+              "column": 19
+            }
+          },
+          "operator": "+",
+          "left": {
+            "kind": "Identifier",
+            "span": {
+              "start": {
+                "offset": 74,
+                "line": 4,
+                "column": 14
+              },
+              "end": {
+                "offset": 75,
+                "line": 4,
+                "column": 15
+              }
+            },
+            "name": "x"
+          },
+          "right": {
+            "kind": "Integer",
+            "span": {
+              "start": {
+                "offset": 78,
+                "line": 4,
+                "column": 18
+              },
+              "end": {
+                "offset": 79,
+                "line": 4,
+                "column": 19
+              }
+            },
+            "value": "1"
+          }
+        }
+      },
+      "locals": [],
+      "body": {
+        "kind": "Block",
+        "span": {
+          "start": {
+            "offset": 80,
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "offset": 98,
+            "line": 7,
+            "column": 2
+          }
+        },
+        "statements": [
+          {
+            "kind": "Assignment",
+            "span": {
+              "start": {
+                "offset": 86,
+                "line": 6,
+                "column": 5
+              },
+              "end": {
+                "offset": 96,
+                "line": 6,
+                "column": 15
+              }
+            },
+            "targets": [
+              {
+                "kind": "Identifier",
+                "span": {
+                  "start": {
+                    "offset": 86,
+                    "line": 6,
+                    "column": 5
+                  },
+                  "end": {
+                    "offset": 87,
+                    "line": 6,
+                    "column": 6
+                  }
+                },
+                "name": "r"
+              }
+            ],
+            "value": {
+              "kind": "Binary",
+              "span": {
+                "start": {
+                  "offset": 90,
+                  "line": 6,
+                  "column": 9
+                },
+                "end": {
+                  "offset": 95,
+                  "line": 6,
+                  "column": 14
+                }
+              },
+              "operator": "+",
+              "left": {
+                "kind": "Identifier",
+                "span": {
+                  "start": {
+                    "offset": 90,
+                    "line": 6,
+                    "column": 9
+                  },
+                  "end": {
+                    "offset": 91,
+                    "line": 6,
+                    "column": 10
+                  }
+                },
+                "name": "x"
+              },
+              "right": {
+                "kind": "Integer",
+                "span": {
+                  "start": {
+                    "offset": 94,
+                    "line": 6,
+                    "column": 13
+                  },
+                  "end": {
+                    "offset": 95,
+                    "line": 6,
+                    "column": 14
+                  }
+                },
+                "value": "1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

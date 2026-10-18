@@ -1,0 +1,56 @@
+package lexer
+
+import "compiler/internal/automats"
+
+var Rules = []automats.Rule{
+	{Name: "WS", Regex: `[ \t\r\n]+`, Priority: 100, Skip: true},
+	{Name: "COMMENT", Regex: `//[^\r\n]*`, Priority: 100, Skip: true},
+	{Name: "INVALID_INT", Regex: `0[0-9]+`, Priority: 110, Error: true},
+
+	{Name: "RETURNS", Regex: `returns`, Priority: 90},
+	{Name: "WHILE", Regex: `while`, Priority: 90},
+	{Name: "IF", Regex: `if`, Priority: 90},
+	{Name: "ELSE", Regex: `else`, Priority: 90},
+	{Name: "ASSERT", Regex: `assert`, Priority: 90},
+	{Name: "ASSUME", Regex: `assume`, Priority: 90},
+	{Name: "INVARIANT", Regex: `invariant`, Priority: 90},
+	{Name: "REQUIRES", Regex: `requires`, Priority: 90},
+	{Name: "ENSURES", Regex: `ensures`, Priority: 90},
+	{Name: "USES", Regex: `uses`, Priority: 90},
+	{Name: "TYPE_INT", Regex: `int`, Priority: 90},
+	{Name: "TRUE", Regex: `true`, Priority: 90},
+	{Name: "FALSE", Regex: `false`, Priority: 90},
+	{Name: "NOT", Regex: `not`, Priority: 90},
+	{Name: "AND", Regex: `and`, Priority: 90},
+	{Name: "OR", Regex: `or`, Priority: 90},
+	{Name: "FORALL", Regex: `forall`, Priority: 90},
+	{Name: "EXISTS", Regex: `exists`, Priority: 90},
+
+	{Name: "IDENT", Regex: `[A-Za-z][A-Za-z0-9]*`, Priority: 50},
+	{Name: "INT", Regex: `0|[1-9][0-9]*`, Priority: 50},
+
+	{Name: "EQ", Regex: `==`, Priority: 80},
+	{Name: "NE", Regex: `!=`, Priority: 80},
+	{Name: "LE", Regex: `<=`, Priority: 80},
+	{Name: "GE", Regex: `>=`, Priority: 80},
+	{Name: "FAT_ARROW", Regex: `=>`, Priority: 80},
+	{Name: "IMPLIES", Regex: `->`, Priority: 80},
+	{Name: "LT", Regex: `<`, Priority: 70},
+	{Name: "GT", Regex: `>`, Priority: 70},
+	{Name: "ASSIGN", Regex: `=`, Priority: 70},
+	{Name: "PLUS", Regex: `\+`, Priority: 70},
+	{Name: "MINUS", Regex: `-`, Priority: 70},
+	{Name: "STAR", Regex: `\*`, Priority: 70},
+	{Name: "SLASH", Regex: `/`, Priority: 70},
+
+	{Name: "LPAREN", Regex: `\(`, Priority: 70},
+	{Name: "RPAREN", Regex: `\)`, Priority: 70},
+	{Name: "LBRACKET", Regex: `\[`, Priority: 70},
+	{Name: "RBRACKET", Regex: `\]`, Priority: 70},
+	{Name: "LBRACE", Regex: `\{`, Priority: 70},
+	{Name: "RBRACE", Regex: `\}`, Priority: 70},
+	{Name: "COMMA", Regex: `,`, Priority: 70},
+	{Name: "SEMICOLON", Regex: `;`, Priority: 70},
+	{Name: "COLON", Regex: `:`, Priority: 70},
+	{Name: "PIPE", Regex: `\|`, Priority: 70},
+}
