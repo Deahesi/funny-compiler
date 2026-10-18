@@ -1,0 +1,7 @@
+increment(x: int)
+requires x >= 0 and x < 100
+returns result: int
+ensures result == x + 1
+{
+    result = x + 1;
+}

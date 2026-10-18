@@ -12,13 +12,13 @@
 go run ./cmd/compiler --help
 
 # Разобрать файл и вывести AST в JSON
-go run ./cmd/compiler parse examples/example.funny
+go run ./cmd/compiler parse example.funny
 
 # Сохранить AST в файл
-go run ./cmd/compiler parse examples/example.funny -o ast.json
+go run ./cmd/compiler parse example.funny -o ast.json
 
 # Прочитать код из стандартного ввода
-go run ./cmd/compiler parse - < examples/example.funny
+go run ./cmd/compiler parse - < example.funny
 
 # Сохранить автомат лексера
 go run ./cmd/compiler dfa -o dfa.json
@@ -33,4 +33,3 @@ go test ./...
 - Ошибки выводятся в stderr в формате `файл:строка:столбец: сообщение` и не входят в JSON AST.
 - Без ошибок код выхода — `0`. При синтаксических ошибках сохраняется частичный AST, при ошибке лексера дерево не создаётся; код выхода — `1`. При запуске через `go run` также появляется сообщение `exit status 1`.
 - Команда `parse` строит автомат сама; запускать `dfa` перед ней не нужно.
-

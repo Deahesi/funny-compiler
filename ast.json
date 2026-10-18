@@ -7,7 +7,7 @@
       "column": 1
     },
     "end": {
-      "offset": 99,
+      "offset": 114,
       "line": 8,
       "column": 1
     }
@@ -22,7 +22,7 @@
           "column": 1
         },
         "end": {
-          "offset": 98,
+          "offset": 113,
           "line": 7,
           "column": 2
         }
@@ -48,7 +48,7 @@
       ],
       "returns": [
         {
-          "name": "r",
+          "name": "result",
           "type": "int",
           "span": {
             "start": {
@@ -57,9 +57,9 @@
               "column": 9
             },
             "end": {
-              "offset": 60,
+              "offset": 65,
               "line": 3,
-              "column": 15
+              "column": 20
             }
           }
         }
@@ -180,14 +180,14 @@
         "kind": "Binary",
         "span": {
           "start": {
-            "offset": 69,
+            "offset": 74,
             "line": 4,
             "column": 9
           },
           "end": {
-            "offset": 79,
+            "offset": 89,
             "line": 4,
-            "column": 19
+            "column": 24
           }
         },
         "operator": "==",
@@ -195,30 +195,30 @@
           "kind": "Identifier",
           "span": {
             "start": {
-              "offset": 69,
+              "offset": 74,
               "line": 4,
               "column": 9
             },
             "end": {
-              "offset": 70,
+              "offset": 80,
               "line": 4,
-              "column": 10
+              "column": 15
             }
           },
-          "name": "r"
+          "name": "result"
         },
         "right": {
           "kind": "Binary",
           "span": {
             "start": {
-              "offset": 74,
-              "line": 4,
-              "column": 14
-            },
-            "end": {
-              "offset": 79,
+              "offset": 84,
               "line": 4,
               "column": 19
+            },
+            "end": {
+              "offset": 89,
+              "line": 4,
+              "column": 24
             }
           },
           "operator": "+",
@@ -226,14 +226,14 @@
             "kind": "Identifier",
             "span": {
               "start": {
-                "offset": 74,
+                "offset": 84,
                 "line": 4,
-                "column": 14
+                "column": 19
               },
               "end": {
-                "offset": 75,
+                "offset": 85,
                 "line": 4,
-                "column": 15
+                "column": 20
               }
             },
             "name": "x"
@@ -242,14 +242,14 @@
             "kind": "Integer",
             "span": {
               "start": {
-                "offset": 78,
+                "offset": 88,
                 "line": 4,
-                "column": 18
+                "column": 23
               },
               "end": {
-                "offset": 79,
+                "offset": 89,
                 "line": 4,
-                "column": 19
+                "column": 24
               }
             },
             "value": "1"
@@ -261,12 +261,12 @@
         "kind": "Block",
         "span": {
           "start": {
-            "offset": 80,
+            "offset": 90,
             "line": 5,
             "column": 1
           },
           "end": {
-            "offset": 98,
+            "offset": 113,
             "line": 7,
             "column": 2
           }
@@ -276,14 +276,14 @@
             "kind": "Assignment",
             "span": {
               "start": {
-                "offset": 86,
+                "offset": 96,
                 "line": 6,
                 "column": 5
               },
               "end": {
-                "offset": 96,
+                "offset": 111,
                 "line": 6,
-                "column": 15
+                "column": 20
               }
             },
             "targets": [
@@ -291,31 +291,31 @@
                 "kind": "Identifier",
                 "span": {
                   "start": {
-                    "offset": 86,
+                    "offset": 96,
                     "line": 6,
                     "column": 5
                   },
                   "end": {
-                    "offset": 87,
+                    "offset": 102,
                     "line": 6,
-                    "column": 6
+                    "column": 11
                   }
                 },
-                "name": "r"
+                "name": "result"
               }
             ],
             "value": {
               "kind": "Binary",
               "span": {
                 "start": {
-                  "offset": 90,
-                  "line": 6,
-                  "column": 9
-                },
-                "end": {
-                  "offset": 95,
+                  "offset": 105,
                   "line": 6,
                   "column": 14
+                },
+                "end": {
+                  "offset": 110,
+                  "line": 6,
+                  "column": 19
                 }
               },
               "operator": "+",
@@ -323,14 +323,14 @@
                 "kind": "Identifier",
                 "span": {
                   "start": {
-                    "offset": 90,
+                    "offset": 105,
                     "line": 6,
-                    "column": 9
+                    "column": 14
                   },
                   "end": {
-                    "offset": 91,
+                    "offset": 106,
                     "line": 6,
-                    "column": 10
+                    "column": 15
                   }
                 },
                 "name": "x"
@@ -339,14 +339,14 @@
                 "kind": "Integer",
                 "span": {
                   "start": {
-                    "offset": 94,
+                    "offset": 109,
                     "line": 6,
-                    "column": 13
+                    "column": 18
                   },
                   "end": {
-                    "offset": 95,
+                    "offset": 110,
                     "line": 6,
-                    "column": 14
+                    "column": 19
                   }
                 },
                 "value": "1"
